@@ -1,31 +1,28 @@
 
-// // Задача 2
+// // Задача 5
+// You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
 
-// Wilson primes satisfy the following condition. Let P represent a prime number.
-
-// Then ((P-1)! + 1) / (P * P) should give a whole number.
-
-// Your task is to create a function that returns true if the given number is a Wilson prime.
-
-let x = 9;
-
-function isInteger(x) {
-  return (x ^ 0) === x;
-};
-
-function factorial(x){
-    let num = 1;
-    while(x){
-        num *= x--;
-    }
-    return num;
-};
-
-let y = factorial(x - 1);
+// As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
 
 
 
-let number = ((y + 1) / (x * x));
 
 
-console.log(isInteger(number));
+let x = 8;
+
+  let arr = [];
+  
+  for(let i = 1 ; i < x + 1 ; i++){
+      
+      arr [ (i - 1) ] = i;
+
+      }
+
+
+
+console.log(arr);
+     
+
+
+
+
